@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Stinky Page - About Me</title>
+    <style>
+        /* The following font-faces are custom fonts, for the header and the text */
+        @font-face {
+            font-family: Germania;
+            src: url(Germania_One/GermaniaOne-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Neuton;
+            src: url(Neuton/Neuton-Regular.ttf);
+        }
+
+        /* The attributes of headers 1, 3, and 4 are changed to have the custom font */
+        h1, h3, h4 {
+            font-family: Germania;
+        }
+
+        /* The attributes of p are changed to have the custom font */
+        p{
+            font-family: Neuton;
+            font-size: 16.5px;
+        }
+
+        /* Implementation of the navigation bar, more work in progess at any moment...*/
+        .navigation{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #252525;
+        }
+
+        /* Special class for list items inside the navigation menu */
+        .nav_list{
+            float: right;
+        }
+
+        /* Attributes of links */
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 18px;
+            text-decoration: none;
+        }
+
+        /* Action done wen link is hovered, but not active */
+        li a:hover:not(.active){
+            background-color: #000000;
+        }
+
+        /* When a link is active */
+        .active{
+            background-color: #0462aa;
+        }
+
+        /* Box Model Implementation, where content is found */
+        .box-content{
+            background-color: rgb(209, 209, 209);
+            width: none;
+            height: none;
+            border: 15px solid rgb(57, 69, 124);
+            padding: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+         /* Footer implementation */
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #4e9eb4;
+            color: white;
+        }
+
+        /* Flex box layout, used to showcase images*/
+        /* Heavy inspiration and resources taken from w3schools.com*/
+        .flex-container {
+            display:flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .flex-item{
+            background-color: #6a4a89;
+            padding: 8px;
+            flex: 50%;
+        }
+
+        /* Media type used only for the flex box */
+        @media (max-width: 600px){
+            .flex-container{
+                flex-direction: column;
+            }
+        }
+
+        
+
+    </style>
+</head>
+
+<body style="background-color: rgb(63, 63, 63);">
+    <!-- This section takes care of the Navigation Menu, found at the top of the site. -->
+    <ul class="navigation">
+        <li class="nav_list"> <a href="contact.html">Contact Info</a></li>
+        <li class="nav_list"> <a class="active" href="#hobbies.html">About Me</a></li>
+        <li class="nav_list"> <a href="project.html">Project</a></li>
+        <li class="nav_list"> <a href="index.html">Home</a></li>
+    </ul>
+
+    <!-- Content inside the box -->
+    <div class="box-content">
+        <h1 style="text-align:center; font-size:40px;">Now This Is Where I Shine!</h1>
+        <hr>
+        <h3 style="font-size: 22px;">But first, How am I??</h3>
+
+        <p>Well, that's simeple to answer, I'm just like any other dude around campus, nothing special about me!</p>
+        <p>...</p>
+        <p>Ok, I was joking about that statement, let's focus to the actual conversation.</p>
+
+        <hr>
+
+        <h3 style="font-size: 22px;">Who am I, for real this time.</h3>
+        <p>Howdy, My name's Luis Espinoza, I'm 19 years old, soon to be 20 years old, and come from Ciudad Juarez, Mexico, and live
+            in the United States to get a better education, and I guess a better life, or at least that's what they say, now with how things
+            are going today, things migth get harder, maybe even harder because of my Mexican Roots? who knows...
+        </p>
+        <p>Here at NMSU, I'm taking the Major of Computer Science because of my curiosity to learn more about how these systems work.
+            It's been a great and challenging journey, but I guess learning new things along the way cannot hurt someone. It has
+            been a bit tiring, given some of my classes, and subjects I have to learn have been difficult, and sometimes giving
+            homework over and over and over again that it's starting to feel like a cycle. But other than that, my experience here at
+            NMSU has been great and fun, still with the sub-goal of trying to make more friends around, despite having a lot
+            of difficulty speaking to people.
+        </p>
+
+        <hr>
+
+        <h3 style="font-size: 22px;">Hobbies - The things that keep me chill</h3>
+        <p>There's two hobbies I do everyday, and both are my personal favorites, those bing drawing and videogames.</p>
+
+        <h4 style="font-size: 17px;">Drawing (Not in professional manners)</h4>
+        <p>I've been drawing for as long as when I was a small lad, but haven't flourished much of my drawings until I around
+            like Middle School or High School. From there, I've picked more and more on drawing until it just became a passtime
+            to do when I have time to spare, or an idea flourishes to my mind. I draw both digitally and traditionally, but I
+            personally prefer to draw more on paper, as I feel like I have more control, and it's been how I've been drawing for
+            majority of my life. I don't like sharing much of what I draw, not because it's not suitable to all audiences, but it
+            mainly gives me a sense of shame and anxiety, not sure why... And because the pages require at least some form of media
+            you can have some samples, I guess...
+        </p>
+        <div class="flex-container">
+            <div class="flex-item"> <img src="Media Content/image-22.png" width="85%" height="auto"> </div>
+            <div class="flex-item"> <img src="Media Content/image-2.png" width="55%" height="auto"> </div>
+        </div>
+
+
+        <h4 style="font-size: 17px;">Videogames, My Sacred Realm</h4>
+        <p>Gaming, everyone, as far as I'm where in this course, has played a videogame before, that is to spend time with friends,
+            or to just chill and have a great time, for me, videogames have been a growing part of my life, and a way to relax and
+            make connections with people. My love with games started since I was young, and over time, I've been playing many new
+            games, and re-played some ones I used to play, and actually enjoy them after being able to read and speak English.
+            Which that reminds me, English is my 2nd language, and with many games that I've played being mainly on English, it was
+            a blast coming back to like let's say, The Legend of Zelda: Majora's Mask, and actually read the dialogue and text, and
+            see how great of a game it is.
+        </p>
+        <p>If there was one subject I could talk hours about, it would be this one, but I think if I continue yapping, this would
+            be much longer than appreciated, so I'll leave you with a list of games/series that I've played, and enjoyed, and I guess it could
+            also work to talk about in case you ever interact with me (if I'm not busy in a homework cycle):
+        </p>
+        <ul>
+            <li>KINGDOM HEARTS</li>
+            <li>The Legend of Zelda</li>
+            <li>Mario Kart 8 Deluxe</li>
+            <li>Splatoon</li>
+            <li>FINAL FANTASY VII</li>
+            <li>The Binding of Isaac</li>
+            <li>Hollow Knight</li>
+            <li>And Many More...</li>
+        </ul>
+        <!-- If I have time to spare, maybe add some gameplay videos? -->
+    </div>
+
+    <footer>
+        <p> <i>When life gives you lemons, burn someone's house with the lemons!</i> </p>
+        <p>Also, shoutouts to <a style=color:rgb(105,200,105); href="https://www.w3schools.com/">w3schools.com</a>
+            for making understanding HMTL + CSS much easier</p>
+    </footer>
+
+</body>
+
+</html>
