@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Stinky Page - Home</title>
+    <style>
+        /* The following font-faces are custom fonts, for the header and the text */
+        @font-face {
+            font-family: Germania;
+            src: url(Germania_One/GermaniaOne-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Neuton;
+            src: url(Neuton/Neuton-Regular.ttf);
+        }
+
+        /* The attributes of h1 are changed to have the custom font */
+        h1 {
+            font-family: Germania;
+            font-size: 40px;
+        }
+
+        /* The attributes of p are changed to have the custom font */
+        p{
+            font-family: Neuton;
+            font-size: 16.5px;
+        }
+
+        /* Implementation of the navigation bar*/
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #252525;
+        }
+
+        /* Special class for list items inside the navigation menu */
+        .nav-list {
+            float: right;
+        }
+
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 18px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: #000000;
+        }
+
+        .active{
+            background-color: #0462aa;
+        }
+
+        /* Box Model, where content is displayed. */
+        div {
+            background-color: rgb(209, 209, 209);
+            width: none;
+            height: none;
+            border: 15px solid rgb(57, 69, 124);
+            padding: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+         /* Footer Implementation */
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #4e9eb4;
+            color: white;
+        }
+
+        /* Attributes of images changed when adding images on the site */
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            min-width: 150px;
+            max-width: 300px;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: rgb(63, 63, 63);">
+    <!-- This section takes care of the Navigation Menu, found at the top of the site. -->
+    <ul class="navigation">
+        <li class="nav-list"> <a href="contact.html">Contact Info</a></li>
+        <li class="nav-list"> <a href="hobbies.html">About Me</a></li>
+        <li class="nav-list"> <a href="project.html">Project</a></li>
+        <li class="nav-list"> <a class="active" href="#index.html">Home</a></li>
+    </ul>
+
+    <!-- Contents inside the box model -->
+    <div>
+        <h1 style="text-align:center">Welcome to... The Home Page?</h1>
+        <p>Yeah... The Home Page, I'm not really sure on what to had here on the home page, other
+            than this HTML project being my full extension of learning the coding language. I'm
+            pretty sure the last time I had to use the HTML format, was for a simple test for
+            one of my classes for, if I recall, Software Development, I think that was the one...
+            If not, it must have been one class from last semester, my memory of college classes
+            tends to fog away after a long day of doing fun things, which I can say this is one
+            of them. <br><br> So yeah, I think that's just about it on the home page... I think... you should
+            probably check on the other tabs, once they are operational, or are not required to be
+            made operational, I'll see... there might be some janky stuff on the way, I apologize for that,
+            I'm still new in learning this, and it will take some practice to master some things.
+        </p>
+        <!-- The all mighty duck implementation -->
+        <img src="https://static.wikia.nocookie.net/893a3765-27af-43cd-ab31-3eaeadf69f84/scale-to-width/755">
+        <p>In the meantime, you have been blessed by this duck with good luck, use it wisely. Now go explore 
+            the other pages of this project will ya? Because I really don't know what else to add here, other than
+            to test and yap about my experience with HTML + CSS.
+        </p>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p> <i>When life gives you lemons, burn someone's house with the lemons!</i> </p>
+        <p>Also, shoutouts to <a style=color:rgb(105,200,105); href="https://www.w3schools.com/">w3schools.com</a>
+            for making understanding HMTL + CSS much easier</p>
+    </footer>
+
+</body>
+
+</html>
