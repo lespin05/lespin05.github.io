@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Stinky Page - Project</title>
+    <style>
+        /* The following font-faces are custom fonts, for the header and the text */
+        @font-face {
+            font-family: Germania;
+            src: url(Germania_One/GermaniaOne-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Neuton;
+            src: url(Neuton/Neuton-Regular.ttf);
+        }
+
+        /* The attributes of h1 are changed to have the custom font */
+        h1 {
+            font-family: Germania;
+            font-size: 40px;
+        }
+
+        /* The attributes of p are changed to have the custom font */
+        p{
+            font-family: Neuton;
+            font-size: 16.5px;
+        }
+        
+        /* Implementation of Navigation Bar*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #252525;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 18px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: #000000;
+        }
+
+        .active{
+            background-color: #0462aa;
+        }
+
+        /* Box Model Implementation, used to put content */
+        div {
+            background-color: rgb(209, 209, 209);
+            width: none;
+            height: none;
+            border: 15px solid rgb(57, 69, 124);
+            padding: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+         /* Footer Implementation */
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #4e9eb4;
+            color: white;
+        }
+
+        /* Changes the attributes of videos, mainly for the rat */
+        video.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            max-width: 300px;
+            min-width: 125px;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: rgb(63, 63, 63);">
+    <!-- This section takes care of the Navigation Menu, found at the top of the site. -->
+    <ul>
+        <li><a href="contact.html">Contact Info</a></li>
+        <li><a href="hobbies.html">About Me</a></li>
+        <li><a class="active" href="#project.html">Project</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+
+    <!-- Website's Content (inside a box) -->
+    <div>
+        <h1 style="text-align:center">So... What's the project about???</h1>
+
+        <p>As far as I'm aware, this project that I'm working on is on making a personal website via HTML + CSS coding.
+            As I have said before in the home page, this is my first time utilizing extensive code of HTML, and I guess
+            my first time utilizing CSS as well, marking both as two new programming languages that I'm learning. So far,
+            this has been the most enjoyable code to write, as far as I'm going with this project. I don't know, just being
+            able to type stuff, and define stuff to look like, rather than to define extensive equations to give an answer, is
+            quite relaxing, given I've had to deal with a lot of mathematics recently...
+        </p>
+
+        <p>Getting back on track, the project aims for me to extend my skills of HTML, and looks for me to add a navigation
+            system, which I already added on the top of the site. Might not be the prettiest, or is the simplest of things, but
+            I'm still learning how to utilize this coding language. So far, I have to make three pages, this one, I believe being
+            the second page, so I only just have to finish the "Hobbies" and "Contact Info" page, and I should be good. The project
+            also looks for me to add pictures and media to the sites, which I already added a Lucky Duck on the Home page, but I guess
+            I'll try adding other types of media in the other pages, who knows, maybe videos and images from my device, should be fun
+            to learn on how to implement those things into the system.
+        </p>
+
+        <p>Anyhow, I think that shoudl be everything that this portion of the site has to offer, really unsure on what to even talk more
+            about the project, other than its a personal website testing my coding skills beyond what I know. I'm considering
+            maybe changing the font sooner or later, but I'll look into that once all the websites are set, so far, at least I want
+            to have them ready before doing modifications to the text and such... So yeah, go explore the other sites!
+        </p>
+
+        <p>Just don't forget to say hi to this rodent before leaving...</p>
+
+        <!-- Video implementation to showcase the rat -->
+        <video class="center" controls>
+            <source src="Media Content/rat.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <footer>
+        <p> <i>When life gives you lemons, burn someone's house with the lemons!</i> </p>
+        <p>Also, shoutouts to <a style=color:rgb(105,200,105); href="https://www.w3schools.com/">w3schools.com</a>
+            for making understanding HMTL + CSS much easier</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Stinky Page - Contacts</title>
+    <style>
+        /* The following font-faces are custom fonts, for the header and the text */
+        @font-face {
+            font-family: Germania;
+            src: url(Germania_One/GermaniaOne-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Neuton;
+            src: url(Neuton/Neuton-Regular.ttf);
+        }
+
+        /* The attributes of h1 are changed to have the custom font */
+        h1 {
+            font-family: Germania;
+            font-size: 40px;
+        }
+
+        /* The attributes of p are changed to have the custom font */
+        p{
+            font-family: Neuton;
+            font-size: 16.5px;
+        }
+
+        /* Implementation of the navigation bar, more work in progess at any moment...*/
+        .navigation{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #252525;
+        }
+
+        /* Special class for list items inside the navigation menu */
+        .nav_list{
+            float: right;
+        }
+
+        /* Attributes of links */
+        li a.nav{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 18px;
+            text-decoration: none;
+        }
+
+        /* Action done wen link is hovered, but not active */
+        li a:hover:not(.active).special{
+            background-color: #000000;
+        }
+
+        /* When a link is active */
+        .active{
+            background-color: #0462aa;
+        }
+
+        /* Box Model Implementation, where content is found */
+        div {
+            background-color: rgb(209, 209, 209);
+            width: none;
+            height: none;
+            border: 15px solid rgb(57, 69, 124);
+            padding: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+         /* Footer implementation */
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #4e9eb4;
+            color: white;
+        }
+
+        /* Image style modification */
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            min-width: 100px;
+            max-width: 250px;
+            height: auto;
+            border: 8px solid rgb(39, 108, 157);
+        }
+
+    </style>
+</head>
+
+<body style="background-color: rgb(63, 63, 63);">
+    <!-- This section takes care of the Navigation Menu, found at the top of the site. -->
+    <ul class="navigation">
+        <li class="nav_list"> <a class="nav active" href="#contact.html">Contact Info</a></li>
+        <li class="nav_list"> <a class="nav special" href="hobbies.html">About Me</a></li>
+        <li class="nav_list"> <a class="nav special" href="project.html">Project</a></li>
+        <li class="nav_list"> <a class="nav special" href="index.html">Home</a></li>
+    </ul>
+
+    <!-- Content of the site -->
+    <div>
+        <h1 style="text-align:center">More About Me?</h1>
+        <p>You don't really have to, I'm not making you, but in case you want to contact me more, either to
+            be a new friend, or just because why not (or because the assignment needs a contact page,
+            regardless of actual information or not) you can contact me in the following places:
+        </p>
+
+        <ul>
+            <!-- Much later, insert links to some of these sites for easier access -->
+            <li>Email - lespin05@nmsu.edu</li>
+            <li>Phone - (915) 352-7247</li>
+            <li>Discord - MrH5 (Discord reads it with lowercase letters)</li>
+            <li>Twitter/X - <a style="color: rgb(39, 108, 157);" href="https://x.com/MrCroissant5">@MrCroissant5</a></li>
+            <li>Instagram - <a style="color: purple;" href="https://www.instagram.com/mrcroissant5/">mrcroissant5</a></li>
+        </ul>
+        <img src="Media Content/20240929_124807_copy.jpg">
+
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p> <i>When life gives you lemons, burn someone's house with the lemons!</i> </p>
+        <p>Also, shoutouts to <a style="color:rgb(105,200,105)"; href="https://www.w3schools.com/">w3schools.com</a>
+            for making understanding HMTL + CSS much easier</p>
+    </footer>
+
+</body>
+
+</html>
